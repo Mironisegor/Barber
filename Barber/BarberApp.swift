@@ -11,7 +11,7 @@ import SwiftUI
 struct BarberApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            LoginView()
         }
     }
 }

@@ -14,6 +14,11 @@
 		F76283032C0F5FAE0076B9FE /* BarberTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F76283022C0F5FAE0076B9FE /* BarberTests.swift */; };
 		F762830D2C0F5FAE0076B9FE /* BarberUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F762830C2C0F5FAE0076B9FE /* BarberUITests.swift */; };
 		F762830F2C0F5FAE0076B9FE /* BarberUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F762830E2C0F5FAE0076B9FE /* BarberUITestsLaunchTests.swift */; };
+		F762831C2C0F60570076B9FE /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F762831B2C0F60570076B9FE /* LoginView.swift */; };
+		F762831E2C0F606A0076B9FE /* RegistrationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F762831D2C0F606A0076B9FE /* RegistrationView.swift */; };
+		F76283252C0F627A0076B9FE /* MrDafoe-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F76283242C0F627A0076B9FE /* MrDafoe-Regular.ttf */; };
+		F76283262C0F627A0076B9FE /* MrDafoe-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F76283242C0F627A0076B9FE /* MrDafoe-Regular.ttf */; };
+		F76283272C0F627A0076B9FE /* MrDafoe-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F76283242C0F627A0076B9FE /* MrDafoe-Regular.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +49,10 @@
 		F76283082C0F5FAE0076B9FE /* BarberUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BarberUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F762830C2C0F5FAE0076B9FE /* BarberUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarberUITests.swift; sourceTree = "<group>"; };
 		F762830E2C0F5FAE0076B9FE /* BarberUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarberUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		F762831B2C0F60570076B9FE /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		F762831D2C0F606A0076B9FE /* RegistrationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationView.swift; sourceTree = "<group>"; };
+		F76283242C0F627A0076B9FE /* MrDafoe-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "MrDafoe-Regular.ttf"; sourceTree = "<group>"; };
+		F76283282C0F62B10076B9FE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,10 +103,14 @@
 		F76282F02C0F5FAC0076B9FE /* Barber */ = {
 			isa = PBXGroup;
 			children = (
+				F76283282C0F62B10076B9FE /* Info.plist */,
+				F762831F2C0F619E0076B9FE /* Fonts */,
 				F76282F12C0F5FAC0076B9FE /* BarberApp.swift */,
 				F76282F32C0F5FAC0076B9FE /* ContentView.swift */,
 				F76282F52C0F5FAE0076B9FE /* Assets.xcassets */,
 				F76282F72C0F5FAE0076B9FE /* Preview Content */,
+				F762831B2C0F60570076B9FE /* LoginView.swift */,
+				F762831D2C0F606A0076B9FE /* RegistrationView.swift */,
 			);
 			path = Barber;
 			sourceTree = "<group>";
@@ -125,6 +138,14 @@
 				F762830E2C0F5FAE0076B9FE /* BarberUITestsLaunchTests.swift */,
 			);
 			path = BarberUITests;
+			sourceTree = "<group>";
+		};
+		F762831F2C0F619E0076B9FE /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				F76283242C0F627A0076B9FE /* MrDafoe-Regular.ttf */,
+			);
+			path = Fonts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -232,6 +253,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F76282F92C0F5FAE0076B9FE /* Preview Assets.xcassets in Resources */,
+				F76283252C0F627A0076B9FE /* MrDafoe-Regular.ttf in Resources */,
 				F76282F62C0F5FAE0076B9FE /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -240,6 +262,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F76283262C0F627A0076B9FE /* MrDafoe-Regular.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -247,6 +270,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F76283272C0F627A0076B9FE /* MrDafoe-Regular.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -257,8 +281,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F762831C2C0F60570076B9FE /* LoginView.swift in Sources */,
 				F76282F42C0F5FAC0076B9FE /* ContentView.swift in Sources */,
 				F76282F22C0F5FAC0076B9FE /* BarberApp.swift in Sources */,
+				F762831E2C0F606A0076B9FE /* RegistrationView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -425,6 +451,7 @@
 				DEVELOPMENT_TEAM = 5X5YVGM7KV;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Barber/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -454,6 +481,7 @@
 				DEVELOPMENT_TEAM = 5X5YVGM7KV;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Barber/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
