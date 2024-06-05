@@ -2,7 +2,7 @@
 //  LoginView.swift
 //  Barber
 //
-//  Created by Gleb  on 04.06.2024.
+//  Created by Mironov Egor on 04.06.2024.
 //
 
 import SwiftUI
