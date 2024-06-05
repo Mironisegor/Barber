@@ -70,7 +70,7 @@ struct LoginView: View {
                 .padding(.top, 20)
             Spacer()
         }
-        .frame(height: 600)
+        .frame(height: 400)
     }
 }
 

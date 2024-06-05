@@ -50,7 +50,7 @@ struct RegistrationView: View {
             }
             Spacer()
         }
-        .frame(width: 300, height: 600)
+        .frame(width: 310, height: 400)
     }
 }
 
