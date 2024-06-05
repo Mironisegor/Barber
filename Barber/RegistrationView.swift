@@ -30,7 +30,7 @@ struct RegistrationView: View {
             FieldForText2(check: $confirmPassword, text: "Подтвердите пароль")
             HStack  {
                 Text("Вы барбер?")
-                    .font(.system(size: 13, weight: .bold))
+                    .font(.system(size: 18, weight: .bold))
                     .foregroundColor(.white)
                 HStack {
                     ToggleButton(check1: $buttonForBarberCheck, check2: $textForBarberCheck, text: "ДА")

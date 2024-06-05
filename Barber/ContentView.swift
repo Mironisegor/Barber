@@ -64,7 +64,6 @@ struct ContentView: View {
                     }
                 }
             }
-            .padding(.top, 150)
             .frame(width: 310)
         }
         .ignoresSafeArea(.all)
