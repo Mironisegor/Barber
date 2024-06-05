@@ -11,7 +11,7 @@ struct LoginView: View {
     @State var email = ""
     @State var password = ""
     var body: some View {
-            VStack {
+        VStack {
                 VStack (spacing: 2) {
                     ZStack(alignment: .leading) {
                         if email.isEmpty {
@@ -21,6 +21,7 @@ struct LoginView: View {
                         }
                         TextField("", text: $email)
                             .font(.system(size: 15))
+                            .foregroundColor(.white)
                     }
                     Rectangle()
                         .frame(width: 320, height: 1)
@@ -37,6 +38,7 @@ struct LoginView: View {
                         }
                         SecureField("", text: $password)
                             .font(.system(size: 17))
+                            .foregroundColor(.white)
                     }
                     Rectangle()
                         .frame(width: 320, height: 1)
@@ -47,7 +49,7 @@ struct LoginView: View {
                     Button {
                         
                     } label: {
-                        Text("Записаться")
+                        Text("Войти")
                             .font(.system(size: 18, weight: .bold))
                             .frame(width: 300, height: 50)
                             .background(Color.gold)
@@ -65,7 +67,10 @@ struct LoginView: View {
                             .padding(.top, -10)
                     }
                 }
+                .padding(.top, 20)
+            Spacer()
         }
+        .frame(height: 600)
     }
 }
 

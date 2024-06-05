@@ -2,7 +2,7 @@
 //  BarberApp.swift
 //  Barber
 //
-//  Created by Gleb  on 04.06.2024.
+//  Created by Egor Mironov on 04.06.2024.
 //
 
 import SwiftUI
@@ -11,7 +11,7 @@ import SwiftUI
 struct BarberApp: App {
     var body: some Scene {
         WindowGroup {
-            LoginView()
+            ContentView()
         }
     }
 }
