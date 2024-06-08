@@ -11,32 +11,19 @@
 		F76282F42C0F5FAC0076B9FE /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F76282F32C0F5FAC0076B9FE /* ContentView.swift */; };
 		F76282F62C0F5FAE0076B9FE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F76282F52C0F5FAE0076B9FE /* Assets.xcassets */; };
 		F76282F92C0F5FAE0076B9FE /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F76282F82C0F5FAE0076B9FE /* Preview Assets.xcassets */; };
-		F76283032C0F5FAE0076B9FE /* BarberTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F76283022C0F5FAE0076B9FE /* BarberTests.swift */; };
-		F762830D2C0F5FAE0076B9FE /* BarberUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F762830C2C0F5FAE0076B9FE /* BarberUITests.swift */; };
-		F762830F2C0F5FAE0076B9FE /* BarberUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F762830E2C0F5FAE0076B9FE /* BarberUITestsLaunchTests.swift */; };
 		F762831C2C0F60570076B9FE /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F762831B2C0F60570076B9FE /* LoginView.swift */; };
 		F762831E2C0F606A0076B9FE /* RegistrationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F762831D2C0F606A0076B9FE /* RegistrationView.swift */; };
 		F76283252C0F627A0076B9FE /* MrDafoe-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F76283242C0F627A0076B9FE /* MrDafoe-Regular.ttf */; };
-		F76283262C0F627A0076B9FE /* MrDafoe-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F76283242C0F627A0076B9FE /* MrDafoe-Regular.ttf */; };
-		F76283272C0F627A0076B9FE /* MrDafoe-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F76283242C0F627A0076B9FE /* MrDafoe-Regular.ttf */; };
+		F76AE2AB2C1494150015E299 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F76AE2AA2C1494150015E299 /* MainView.swift */; };
+		F76AE2AD2C149BD20015E299 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F76AE2AC2C149BD20015E299 /* GoogleService-Info.plist */; };
+		F76AE2B22C149DFB0015E299 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = F76AE2B12C149DFB0015E299 /* FirebaseAuth */; };
+		F76AE2B42C149DFB0015E299 /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = F76AE2B32C149DFB0015E299 /* FirebaseDatabase */; };
+		F76AE2B62C149DFB0015E299 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = F76AE2B52C149DFB0015E299 /* FirebaseFirestore */; };
+		F76AE2B82C149DFB0015E299 /* FirebaseInAppMessaging-Beta in Frameworks */ = {isa = PBXBuildFile; productRef = F76AE2B72C149DFB0015E299 /* FirebaseInAppMessaging-Beta */; };
+		F76AE2BA2C149DFB0015E299 /* FirebaseInAppMessagingSwift-Beta in Frameworks */ = {isa = PBXBuildFile; productRef = F76AE2B92C149DFB0015E299 /* FirebaseInAppMessagingSwift-Beta */; };
+		F76AE2BC2C149DFB0015E299 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = F76AE2BB2C149DFB0015E299 /* FirebaseStorage */; };
+		F76AE2BE2C149EFD0015E299 /* FirebaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F76AE2BD2C149EFD0015E299 /* FirebaseManager.swift */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		F76282FF2C0F5FAE0076B9FE /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = F76282E62C0F5FAC0076B9FE /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = F76282ED2C0F5FAC0076B9FE;
-			remoteInfo = Barber;
-		};
-		F76283092C0F5FAE0076B9FE /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = F76282E62C0F5FAC0076B9FE /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = F76282ED2C0F5FAC0076B9FE;
-			remoteInfo = Barber;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		F76282EE2C0F5FAC0076B9FE /* Barber.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Barber.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -44,15 +31,13 @@
 		F76282F32C0F5FAC0076B9FE /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		F76282F52C0F5FAE0076B9FE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F76282F82C0F5FAE0076B9FE /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		F76282FE2C0F5FAE0076B9FE /* BarberTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BarberTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		F76283022C0F5FAE0076B9FE /* BarberTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarberTests.swift; sourceTree = "<group>"; };
-		F76283082C0F5FAE0076B9FE /* BarberUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BarberUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		F762830C2C0F5FAE0076B9FE /* BarberUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarberUITests.swift; sourceTree = "<group>"; };
-		F762830E2C0F5FAE0076B9FE /* BarberUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarberUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		F762831B2C0F60570076B9FE /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		F762831D2C0F606A0076B9FE /* RegistrationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationView.swift; sourceTree = "<group>"; };
 		F76283242C0F627A0076B9FE /* MrDafoe-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "MrDafoe-Regular.ttf"; sourceTree = "<group>"; };
 		F76283282C0F62B10076B9FE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		F76AE2AA2C1494150015E299 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		F76AE2AC2C149BD20015E299 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		F76AE2BD2C149EFD0015E299 /* FirebaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,20 +45,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		F76282FB2C0F5FAE0076B9FE /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		F76283052C0F5FAE0076B9FE /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
+				F76AE2B42C149DFB0015E299 /* FirebaseDatabase in Frameworks */,
+				F76AE2B22C149DFB0015E299 /* FirebaseAuth in Frameworks */,
+				F76AE2BA2C149DFB0015E299 /* FirebaseInAppMessagingSwift-Beta in Frameworks */,
+				F76AE2B62C149DFB0015E299 /* FirebaseFirestore in Frameworks */,
+				F76AE2B82C149DFB0015E299 /* FirebaseInAppMessaging-Beta in Frameworks */,
+				F76AE2BC2C149DFB0015E299 /* FirebaseStorage in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -84,8 +61,6 @@
 			isa = PBXGroup;
 			children = (
 				F76282F02C0F5FAC0076B9FE /* Barber */,
-				F76283012C0F5FAE0076B9FE /* BarberTests */,
-				F762830B2C0F5FAE0076B9FE /* BarberUITests */,
 				F76282EF2C0F5FAC0076B9FE /* Products */,
 			);
 			sourceTree = "<group>";
@@ -94,8 +69,6 @@
 			isa = PBXGroup;
 			children = (
 				F76282EE2C0F5FAC0076B9FE /* Barber.app */,
-				F76282FE2C0F5FAE0076B9FE /* BarberTests.xctest */,
-				F76283082C0F5FAE0076B9FE /* BarberUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -104,13 +77,16 @@
 			isa = PBXGroup;
 			children = (
 				F76283282C0F62B10076B9FE /* Info.plist */,
+				F76AE2AC2C149BD20015E299 /* GoogleService-Info.plist */,
 				F762831F2C0F619E0076B9FE /* Fonts */,
 				F76282F12C0F5FAC0076B9FE /* BarberApp.swift */,
 				F76282F32C0F5FAC0076B9FE /* ContentView.swift */,
+				F76AE2AA2C1494150015E299 /* MainView.swift */,
 				F76282F52C0F5FAE0076B9FE /* Assets.xcassets */,
 				F76282F72C0F5FAE0076B9FE /* Preview Content */,
 				F762831B2C0F60570076B9FE /* LoginView.swift */,
 				F762831D2C0F606A0076B9FE /* RegistrationView.swift */,
+				F76AE2BD2C149EFD0015E299 /* FirebaseManager.swift */,
 			);
 			path = Barber;
 			sourceTree = "<group>";
@@ -121,23 +97,6 @@
 				F76282F82C0F5FAE0076B9FE /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
-			sourceTree = "<group>";
-		};
-		F76283012C0F5FAE0076B9FE /* BarberTests */ = {
-			isa = PBXGroup;
-			children = (
-				F76283022C0F5FAE0076B9FE /* BarberTests.swift */,
-			);
-			path = BarberTests;
-			sourceTree = "<group>";
-		};
-		F762830B2C0F5FAE0076B9FE /* BarberUITests */ = {
-			isa = PBXGroup;
-			children = (
-				F762830C2C0F5FAE0076B9FE /* BarberUITests.swift */,
-				F762830E2C0F5FAE0076B9FE /* BarberUITestsLaunchTests.swift */,
-			);
-			path = BarberUITests;
 			sourceTree = "<group>";
 		};
 		F762831F2C0F619E0076B9FE /* Fonts */ = {
@@ -164,45 +123,17 @@
 			dependencies = (
 			);
 			name = Barber;
+			packageProductDependencies = (
+				F76AE2B12C149DFB0015E299 /* FirebaseAuth */,
+				F76AE2B32C149DFB0015E299 /* FirebaseDatabase */,
+				F76AE2B52C149DFB0015E299 /* FirebaseFirestore */,
+				F76AE2B72C149DFB0015E299 /* FirebaseInAppMessaging-Beta */,
+				F76AE2B92C149DFB0015E299 /* FirebaseInAppMessagingSwift-Beta */,
+				F76AE2BB2C149DFB0015E299 /* FirebaseStorage */,
+			);
 			productName = Barber;
 			productReference = F76282EE2C0F5FAC0076B9FE /* Barber.app */;
 			productType = "com.apple.product-type.application";
-		};
-		F76282FD2C0F5FAE0076B9FE /* BarberTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = F76283152C0F5FAE0076B9FE /* Build configuration list for PBXNativeTarget "BarberTests" */;
-			buildPhases = (
-				F76282FA2C0F5FAE0076B9FE /* Sources */,
-				F76282FB2C0F5FAE0076B9FE /* Frameworks */,
-				F76282FC2C0F5FAE0076B9FE /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				F76283002C0F5FAE0076B9FE /* PBXTargetDependency */,
-			);
-			name = BarberTests;
-			productName = BarberTests;
-			productReference = F76282FE2C0F5FAE0076B9FE /* BarberTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		F76283072C0F5FAE0076B9FE /* BarberUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = F76283182C0F5FAE0076B9FE /* Build configuration list for PBXNativeTarget "BarberUITests" */;
-			buildPhases = (
-				F76283042C0F5FAE0076B9FE /* Sources */,
-				F76283052C0F5FAE0076B9FE /* Frameworks */,
-				F76283062C0F5FAE0076B9FE /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				F762830A2C0F5FAE0076B9FE /* PBXTargetDependency */,
-			);
-			name = BarberUITests;
-			productName = BarberUITests;
-			productReference = F76283082C0F5FAE0076B9FE /* BarberUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
 
@@ -217,14 +148,6 @@
 					F76282ED2C0F5FAC0076B9FE = {
 						CreatedOnToolsVersion = 15.4;
 					};
-					F76282FD2C0F5FAE0076B9FE = {
-						CreatedOnToolsVersion = 15.4;
-						TestTargetID = F76282ED2C0F5FAC0076B9FE;
-					};
-					F76283072C0F5FAE0076B9FE = {
-						CreatedOnToolsVersion = 15.4;
-						TestTargetID = F76282ED2C0F5FAC0076B9FE;
-					};
 				};
 			};
 			buildConfigurationList = F76282E92C0F5FAC0076B9FE /* Build configuration list for PBXProject "Barber" */;
@@ -236,13 +159,14 @@
 				Base,
 			);
 			mainGroup = F76282E52C0F5FAC0076B9FE;
+			packageReferences = (
+				F76AE2B02C149DFA0015E299 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			productRefGroup = F76282EF2C0F5FAC0076B9FE /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				F76282ED2C0F5FAC0076B9FE /* Barber */,
-				F76282FD2C0F5FAE0076B9FE /* BarberTests */,
-				F76283072C0F5FAE0076B9FE /* BarberUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -253,24 +177,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				F76282F92C0F5FAE0076B9FE /* Preview Assets.xcassets in Resources */,
+				F76AE2AD2C149BD20015E299 /* GoogleService-Info.plist in Resources */,
 				F76283252C0F627A0076B9FE /* MrDafoe-Regular.ttf in Resources */,
 				F76282F62C0F5FAE0076B9FE /* Assets.xcassets in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		F76282FC2C0F5FAE0076B9FE /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				F76283262C0F627A0076B9FE /* MrDafoe-Regular.ttf in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		F76283062C0F5FAE0076B9FE /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				F76283272C0F627A0076B9FE /* MrDafoe-Regular.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -281,44 +190,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F76AE2BE2C149EFD0015E299 /* FirebaseManager.swift in Sources */,
 				F762831C2C0F60570076B9FE /* LoginView.swift in Sources */,
 				F76282F42C0F5FAC0076B9FE /* ContentView.swift in Sources */,
 				F76282F22C0F5FAC0076B9FE /* BarberApp.swift in Sources */,
+				F76AE2AB2C1494150015E299 /* MainView.swift in Sources */,
 				F762831E2C0F606A0076B9FE /* RegistrationView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		F76282FA2C0F5FAE0076B9FE /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				F76283032C0F5FAE0076B9FE /* BarberTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		F76283042C0F5FAE0076B9FE /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				F762830F2C0F5FAE0076B9FE /* BarberUITestsLaunchTests.swift in Sources */,
-				F762830D2C0F5FAE0076B9FE /* BarberUITests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		F76283002C0F5FAE0076B9FE /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = F76282ED2C0F5FAC0076B9FE /* Barber */;
-			targetProxy = F76282FF2C0F5FAE0076B9FE /* PBXContainerItemProxy */;
-		};
-		F762830A2C0F5FAE0076B9FE /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = F76282ED2C0F5FAC0076B9FE /* Barber */;
-			targetProxy = F76283092C0F5FAE0076B9FE /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		F76283102C0F5FAE0076B9FE /* Debug */ = {
@@ -500,82 +381,6 @@
 			};
 			name = Release;
 		};
-		F76283162C0F5FAE0076B9FE /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 5X5YVGM7KV;
-				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = Egor.BarberTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Barber.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Barber";
-			};
-			name = Debug;
-		};
-		F76283172C0F5FAE0076B9FE /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 5X5YVGM7KV;
-				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = Egor.BarberTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Barber.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Barber";
-			};
-			name = Release;
-		};
-		F76283192C0F5FAE0076B9FE /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 5X5YVGM7KV;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = Egor.BarberUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = Barber;
-			};
-			name = Debug;
-		};
-		F762831A2C0F5FAE0076B9FE /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 5X5YVGM7KV;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = Egor.BarberUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = Barber;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -597,25 +402,51 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		F76283152C0F5FAE0076B9FE /* Build configuration list for PBXNativeTarget "BarberTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				F76283162C0F5FAE0076B9FE /* Debug */,
-				F76283172C0F5FAE0076B9FE /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		F76283182C0F5FAE0076B9FE /* Build configuration list for PBXNativeTarget "BarberUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				F76283192C0F5FAE0076B9FE /* Debug */,
-				F762831A2C0F5FAE0076B9FE /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		F76AE2B02C149DFA0015E299 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 10.27.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		F76AE2B12C149DFB0015E299 /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F76AE2B02C149DFA0015E299 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		F76AE2B32C149DFB0015E299 /* FirebaseDatabase */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F76AE2B02C149DFA0015E299 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseDatabase;
+		};
+		F76AE2B52C149DFB0015E299 /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F76AE2B02C149DFA0015E299 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+		F76AE2B72C149DFB0015E299 /* FirebaseInAppMessaging-Beta */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F76AE2B02C149DFA0015E299 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = "FirebaseInAppMessaging-Beta";
+		};
+		F76AE2B92C149DFB0015E299 /* FirebaseInAppMessagingSwift-Beta */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F76AE2B02C149DFA0015E299 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = "FirebaseInAppMessagingSwift-Beta";
+		};
+		F76AE2BB2C149DFB0015E299 /* FirebaseStorage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F76AE2B02C149DFA0015E299 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseStorage;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = F76282E62C0F5FAC0076B9FE /* Project object */;
 }

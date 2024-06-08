@@ -16,6 +16,8 @@ struct RegistrationView: View {
     @State var phoneNumber = ""
     @State var buttonForBarberCheck: Bool = true
     @State var textForBarberCheck: Bool = true
+    @State var isShowingPassword: Bool = false
+    let fbmanager = FirebaseManager()
     var body: some View {
         VStack (spacing: 15) {
             HStack {
@@ -23,11 +25,11 @@ struct RegistrationView: View {
                 Spacer()
                 FieldForText1(check: $surname, text: "Фамилия")
             }
-            .frame(width: 310, height: 30)
+            .frame(width: 320, height: 30)
             FieldForText2(check: $email, text: "Email")
             FieldForText2(check: $phoneNumber, text: "Номер телефона")
-            FieldForText2(check: $password, text: "Пароль")
-            FieldForText2(check: $confirmPassword, text: "Подтвердите пароль")
+            FieldForPassword(password: $password, text: "Пароль", isShowingPassword: $isShowingPassword)
+            FieldForPassword(password: $confirmPassword, text: "Подтвердите пароль", isShowingPassword: $isShowingPassword)
             HStack  {
                 Text("Вы барбер?")
                     .font(.system(size: 18, weight: .bold))
@@ -39,18 +41,18 @@ struct RegistrationView: View {
                 }
             }
             Button {
-                
+                fbmanager.registNewUser(user: userData(name: name, surname: surname, email: email, phoneNumber: phoneNumber, password: password))
             } label: {
                 Text("Зарегистрироваться")
                     .font(.system(size: 18, weight: .bold))
-                    .frame(width: 300, height: 50)
+                    .frame(width: 310, height: 50)
                     .background(Color.gold)
                     .foregroundColor(.black)
                     .cornerRadius(10)
             }
             Spacer()
         }
-        .frame(width: 310, height: 400)
+        .frame(width: 320, height: 400)
     }
 }
 
@@ -81,6 +83,53 @@ struct FieldForText1: View {
     }
 }
 
+struct FieldForPassword: View {
+    @Binding var password: String
+    @State var text: String
+    @Binding var isShowingPassword: Bool
+    var body: some View {
+        VStack (spacing: 2) {
+            ZStack(alignment: .leading) {
+                if password.isEmpty {
+                    Text(text)
+                        .foregroundColor(.myGrey)
+                        .font(.system(size: 17))
+                }
+                if !isShowingPassword {
+                    HStack {
+                        SecureField("", text: $password)
+                            .font(.system(size: 15))
+                            .foregroundColor(.white)
+                        Button {
+                            isShowingPassword.toggle()
+                        } label: {
+                            Image(systemName: "eye")
+                                .foregroundColor(.myGrey)
+                        }
+                    }
+                }
+                else {
+                    HStack {
+                        TextField("", text: $password)
+                            .font(.system(size: 15))
+                            .foregroundColor(.white)
+                        Button {
+                            isShowingPassword.toggle()
+                        } label: {
+                            Image(systemName: "eye.slash.fill")
+                                .foregroundColor(.myGrey)
+                        }
+                    }
+                }
+            }
+            Rectangle()
+                .frame(width: 320, height: 1)
+                .foregroundColor(.myGrey)
+        }
+        .frame(width: 320, height: 30)
+    }
+}
+
 struct FieldForText2: View {
     @Binding var check: String
     @State var text: String
@@ -97,10 +146,10 @@ struct FieldForText2: View {
                     .foregroundColor(.white)
             }
             Rectangle()
-                .frame(width: 310, height: 1)
+                .frame(width: 320, height: 1)
                 .foregroundColor(.myGrey)
         }
-        .frame(width: 310, height: 30)
+        .frame(width: 320, height: 30)
     }
 }
 
@@ -118,7 +167,7 @@ struct ToggleButton: View {
                     Rectangle()
                         .frame(width: 40, height: 20)
                         .cornerRadius(30)
-                        .foregroundColor(check1 ? .gold : .black)
+                        .foregroundColor(check1 ? .gold : .clear)
                     Text(text)
                         .font(.system(size: 12, weight: .bold))
                         .foregroundColor(check2 ?  .black : .white)
@@ -134,7 +183,7 @@ struct ToggleButton: View {
                     Rectangle()
                         .frame(width: 40, height: 20)
                         .cornerRadius(30)
-                        .foregroundColor(!check1 ? .gold : .black)
+                        .foregroundColor(!check1 ? .gold : .clear)
                     Text(text)
                         .font(.system(size: 12, weight: .bold))
                         .foregroundColor(!check2 ?  .black : .white)

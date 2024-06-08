@@ -12,6 +12,7 @@ struct LoginView: View {
     @State var password = ""
     var body: some View {
         VStack {
+            VStack (spacing: 15) {
                 VStack (spacing: 2) {
                     ZStack(alignment: .leading) {
                         if email.isEmpty {
@@ -45,29 +46,30 @@ struct LoginView: View {
                         .foregroundColor(.myGrey)
                 }
                 .frame(width: 320, height: 30)
-                VStack {
-                    Button {
-                        
-                    } label: {
-                        Text("Войти")
-                            .font(.system(size: 18, weight: .bold))
-                            .frame(width: 300, height: 50)
-                            .background(Color.gold)
-                            .foregroundColor(.black)
-                            .cornerRadius(10)
-                    }
-                    Button {
-                        
-                    } label: {
-                        Text("Забыли пароль?")
-                            .font(.system(size: 18, weight: .bold))
-                            .frame(width: 300, height: 50)
-                            .foregroundColor(.gold)
-                            .cornerRadius(10)
-                            .padding(.top, -10)
-                    }
+            }
+            VStack {
+                Button {
+                    
+                } label: {
+                    Text("Войти")
+                        .font(.system(size: 18, weight: .bold))
+                        .frame(width: 300, height: 50)
+                        .background(Color.gold)
+                        .foregroundColor(.black)
+                        .cornerRadius(10)
                 }
-                .padding(.top, 20)
+                Button {
+                    
+                } label: {
+                    Text("Забыли пароль?")
+                        .font(.system(size: 18, weight: .bold))
+                        .frame(width: 300, height: 50)
+                        .foregroundColor(.gold)
+                        .cornerRadius(10)
+                        .padding(.top, -10)
+                }
+            }
+            .padding(.top, 20)
             Spacer()
         }
         .frame(height: 400)
